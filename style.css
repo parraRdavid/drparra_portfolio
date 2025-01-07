@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAV BAR CSS */
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes logo left and links right */
+    align-items: center;
+    /* Vertically centers items */
+    height: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: sticky;
+    top: 0;
+    /* Sticks the navbar at the top of the viewport */
+    z-index: 1000;
+
+}
+
+.nav .logo a {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/* NAV BAR CSS */
+
+/* SECTION FORMATTING */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    margin-bottom: 70px;
+    /* background: green; */
+
+}
+
+/* SECTION FORMATTING */
+
+/* PROFILE SECTION */
+#profile-section {
+    display: flex;
+    justify-content: center;
+    gap: 12rem;
+    height: 80vh;
+    border-radius: 2rem;
+
+}
+
+.imgContainer {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+
+}
+
+#bio {
+    align-self: center;
+    text-align: center;
+}
+
+#bio p {
+    font-weight: 600;
+}
+
+.bio_text_p1 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+.bio_text_title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.bio_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+#profile_picture {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+/* PROFILE SECTION */
+
+/* ABOUT ME SECTION  */
+
+#about-section {
+    position: relative;
+    border-radius: 2rem;
+    /* background: red; */
+}
+
+.section-header {
+    margin-bottom: 1rem;
+    align-self: center;
+    text-align: center;
+    /* font-size: 3rem; */
+}
+
+.section-header h2 {
+    font-size: 2rem;
+}
+
+
+.about-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background: yellow; */
+    height: 70%;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.about-containers {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: gray 2px solid;
+    text-align: center;
+    width: 90%;
+
+}
+
+.about-desc-container {
+    padding: 2.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: gray 2px solid;
+    text-align: center;
+    /* background: red; */
+
+}
+
+.about-elements-container {
+    /* background: green; */
+    width: 60%;
+    padding: 3rem;
+}
+
+/* ABOUT ME SECTION  */
+
+
+/* PROJECTS SECTION */
+#projects-section {
+    padding: 2rem;
+    /* Add consistent padding around the section */
+    border-radius: 2rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* Ensures even spacing between items */
+    align-items: center;
+    /* Centers items vertically */
+    gap: 2rem;
+    /* Even gaps between items */
+    padding: 2rem;
+    /* Padding inside the container */
+
+}
+
+.project-info-box {
+    padding: 1.5rem;
+    width: 400px;
+    border-radius: 1rem;
+    border: 1px solid gray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-info-box img {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.project-info-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Space between child elements */
+}
+
+.project-info-box-text h3 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    /* Add space below the title */
+}
+
+.project-info-box-text h5 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 10px;
+    /* Add space below the subtitle */
+}
+
+.project-info-box-text p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    /* Add space below the description */
+}
+
+.projectLinks {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+.project-info-box:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the card */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Increases shadow intensity */
+    border-color: black;
+    /* Makes the border more pronounced */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* PROJECTS SECTION */
+
+
+/* SKILLS SECTION */
+#skills-section {
+
+    /* background-color: #9fb6c3; */
+
+}
+
+/* SKILLS SECTION */
