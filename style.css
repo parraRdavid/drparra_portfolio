@@ -87,6 +87,25 @@ section {
 
 }
 
+.linksDiv img {
+    width: 70px;
+    /* Set the width of the icons */
+    height: 70px;
+    /* Set the height of the icons */
+    object-fit: contain;
+    /* Ensures the image scales without distortion */
+    margin: 0 10px;
+    /* Optional: Adds spacing between the icons */
+}
+
+.linksDiv img:hover {
+    transform: scale(1.2);
+    /* Slightly enlarges the card */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Increases shadow intensity */
+    border-color: black;
+}
+
 #bio {
     align-self: center;
     text-align: center;
